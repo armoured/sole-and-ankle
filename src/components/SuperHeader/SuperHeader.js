@@ -15,7 +15,7 @@ const SuperHeader = () => {
       </MarketingMessage>
       <SearchInput />
       <HelpLink href="/help">Help</HelpLink>
-      <UnstyledButton>
+      <UnstyledButton display="inline-block">
         <Icon id="shopping-bag" strokeWidth={1} />
       </UnstyledButton>
     </Wrapper>
@@ -26,10 +26,14 @@ const Wrapper = styled.div`
   font-size: 0.875rem;
   color: ${COLORS.gray[300]};
   background-color: ${COLORS.gray[900]};
+  display: flex;
+  gap: 24px;
+  padding: 12px 32px;
 `;
 
 const MarketingMessage = styled.span`
   color: ${COLORS.white};
+  margin-right: auto;
 `;
 
 const HelpLink = styled.a`
